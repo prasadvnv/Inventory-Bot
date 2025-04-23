@@ -30,3 +30,7 @@ source devel/setup.bash
 - ROS (Robot Operating System)
 - Python 2 or 3
 - Gazebo (for simulation)
+
+## Future Work:
+- Develop a more complex robot model and integrate with multiple sensors
+- Implement autonomous navigation using machine learning
