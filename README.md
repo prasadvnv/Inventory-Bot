@@ -1,10 +1,16 @@
 # Inventory-Bot
 An autonomous inventory bot using ROS, SLAM, and obstacle avoidance to navigate warehouses. It features a Python-controlled adjustable tray, allowing the bot to deliver inventory to specific drawers or trays at various heights. The bot's design optimizes warehouse efficiency with minimal human intervention.
+- Fully custom URDF with LiDAR, RGB camera, and prismatic tray control
+- Includes realistic physics and sensor noise models for accurate simulation
+- Integrated with gazebo_ros_control and publishes ROS topics for navigation and perception
 
 ## Features
-- **ROS Integration**: Utilizes ROS for movement, navigation, and control.
-- **Tray Movement**: Python script to raise and lower the tray based on the target position.
-- **Navigation**: Python scripts that enable the bot to navigate to target locations and set initial poses.
+- LiDAR & Camera-based obstacle avoidance
+- Extended Kalman Filter (EKF) for sensor fusion
+- SLAM-based mapping and localization (e.g., GMapping/Cartographer)
+- Custom tray actuation system using Python
+- Real-time simulation in Gazebo and visualization in RViz
+- Python scripts that enable the bot to navigate to target locations and set initial poses.
 
 ## Usage
 ### 1. Set Initial Position
