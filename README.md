@@ -12,6 +12,17 @@ An autonomous inventory bot using ROS, SLAM, and obstacle avoidance to navigate 
 - Real-time simulation in Gazebo and visualization in RViz
 - Python scripts that enable the bot to navigate to target locations and set initial poses.
 
+## Components
+
+- **Base & Wheels**: The mobile platform for movement.
+- **Tray Actuator**: Mechanism to lift or move the payload.
+- **Camera**: Used for visual input (e.g., object detection, SLAM).
+- **LiDAR**: Provides 360° environment scanning for mapping and obstacle avoidance.
+- **ROS Nodes**:
+  - `EKF`: Extended Kalman Filter for sensor fusion (IMU + wheel odometry + GPS/LiDAR).
+  - `SLAM`: Simultaneous Localization and Mapping using camera and/or LiDAR data.
+  - `Navigation`: ROS Navigation Stack for global and local path planning.
+
 ## Usage
 ### 1. Set Initial Position
 To set the initial pose of the robot based on the current position from Gazebo, use:
