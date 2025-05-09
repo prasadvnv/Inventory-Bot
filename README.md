@@ -4,6 +4,11 @@ An autonomous inventory bot using ROS, SLAM, and obstacle avoidance to navigate 
 - Includes realistic physics and sensor noise models for accurate simulation
 - Integrated with gazebo_ros_control and publishes ROS topics for navigation and perception
 
+## System Overview
+
+![System Diagram](system_diagram.png)
+
+
 ## Features
 - LiDAR & Camera-based obstacle avoidance
 - Extended Kalman Filter (EKF) for sensor fusion
