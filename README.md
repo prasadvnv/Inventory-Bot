@@ -8,7 +8,7 @@ An autonomous inventory bot using ROS, SLAM, and obstacle avoidance to navigate 
 
 ![System Diagram](system_diagram.png)
 
-🎥 **Demo Video:** [Watch here](https://drive.google.com/file/d/1bjBxYlOi41ZNOsOR_7jinCusTCw98ddR/view?usp=sharing)  
+🎥 **Demo Video (SLAM + Obstacle Avoidance):** [Watch here](https://drive.google.com/file/d/1bjBxYlOi41ZNOsOR_7jinCusTCw98ddR/view?usp=sharing)  
 
 ## Features
 - LiDAR & Camera-based obstacle avoidance
