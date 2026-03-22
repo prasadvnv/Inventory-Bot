@@ -1,0 +1,10 @@
+controller:
+  type: position_controllers/JointTrajectoryController
+  joints:
+    - joint_tray
+  gains:
+    joint_tray:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1

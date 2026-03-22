@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: autonomous_robot_3
+    relative_path: urdf/autonomous_robot_3.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/autonomous_robot_3.srdf
+  CONFIG:
+    author_name: vnv
+    author_email: vnv@gmail.com
+    generated_timestamp: 1719100789

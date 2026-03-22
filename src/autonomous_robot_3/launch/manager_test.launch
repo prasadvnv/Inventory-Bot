@@ -1,0 +1,16 @@
+<launch>
+  <!-- Load controller parameters -->
+  <rosparam file="$(find autonomous_robot_3)/config/controllers.yaml" command="load" ns="/robot"/>
+
+  <!-- Launch the controller manager -->
+  <node name="controller_manager" pkg="controller_manager" type="controller_manager" ns="/robot" respawn="false" output="screen">
+    <param name="use_sim_time" value="false"/>
+  </node>
+
+  <!-- Wait for the controller manager service to be available -->
+  <node name="wait_for_controller_manager" pkg="autonomous_robot_3" type="wait_for_service.py" output="screen" />
+
+  <!-- Launch the controller spawner -->
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" ns="/robot" respawn="false" output="screen" args="joint_state_controller joint_tray_controller"/>
+</launch>
+
